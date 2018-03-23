@@ -14,10 +14,10 @@ class GroupBatchnorm2d(nn.Module):
 
         x = x.view(N, self.group_num, -1)
 
-        self.mean = x.mean(dim = 2, keepdim = True)
-        self.std = x.std(dim = 2, keepdim = True)
+        mean = x.mean(dim = 2, keepdim = True)
+        std = x.std(dim = 2, keepdim = True)
 
-        x = (x - self.mean) / (self.std+self.eps)
+        x = (x - mean) / (std+self.eps)
         x = x.view(N, C, H, W)
 
         return x * self.gamma + self.beta

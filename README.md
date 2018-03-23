@@ -10,4 +10,3 @@ ref:
         author={Yuxin Wu, Kaiming He},
         journal={arXiv preprint arXiv:1803.08494},
         year={2018}
-}

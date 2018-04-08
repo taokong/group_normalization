@@ -1,8 +1,6 @@
 # group_normalization
 pytorch re-implementation of group normalization in https://arxiv.org/abs/1803.08494
 
-Still under testing!
-
 ref:
 
     @article{wu2018group,

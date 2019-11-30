@@ -1,4 +1,6 @@
 # group_normalization
+GN has been implemented by official PyTorch, so I recommend to use the official one which is more memory efficient.
+
 pytorch re-implementation of group normalization in https://arxiv.org/abs/1803.08494
 
 ref:
